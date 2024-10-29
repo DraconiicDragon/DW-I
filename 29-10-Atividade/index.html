@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Incrível Site</h1>
+        <img src="https://cdn.7tv.app/emote/65cd1b27d3b1b01bf94cc78b/4x.webp" alt="">
+    </center>
+    <h1>Algoritmos em C--</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Eos voluptatem dolorem</b> saepe sunt quos neque fugiat beatae amet deserunt, veniam, 
+        ut quam vero dolorum officia quis sed! Esse, ducimus quam. <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Deserunt sapiente, odit, 
+        perferendis rerum quis reprehenderit, vero commodi animi sequi a suscipit? <b>Minima maxime,</b> beatae similique tempore obcaecati fugit? Quia, ipsum.<br>Segundo Confia:</p>
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis distinctio numquam quaerat tenetur reiciendis veritatis eos minus, 
+            nemo ipsa accusantium consequatur. Dolorum odio reiciendis esse laudantium quisquam nostrum eveniet laborum? Lorem ipsum dolor sit amet 
+            consectetur, adipisicing elit. Dicta adipisci quia harum, magni officia reprehenderit laudantium officiis nisi reiciendis dignissimos facere 
+            repudiandae est possimus deserunt minima error? At, nemo deserunt.</p>
+            <cite>Confia, 1984</cite>
+    </blockquote>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sapiente aspernatur optio, magnam fuga dicta quia in. Mollitia omnis quasi 
+        deleniti laboriosam unde illum aperiam ut facilis, obcaecati eius nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur 
+        id aliquid nisi, perspiciatis illum! Molestias omnis <s> Brute Force in exercitationem similique repudiandae eaque obcaecati quae architecto, natus voluptas animi illum amet?</s>
+        <ins>Programação Dinâmica lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium nobis rerum nihil dolores facere quae ratione ipsum recusandae in 
+            eaque blanditiis doloremque dolorem aperiam, quaerat, veritatis, enim nam incidunt!</ins>
+        <i>Fonte: <b>JUVENTUDE.</b> Da, 2025</i>
+    </p>
+    <hr>
+    <h2>Exemplo de Implementação</h2>
+    <strong>Trivial</strong> <br>
+    <code>     
+        <del>
+            int poggies(vector&lt;int>& mapa, int x, int y) {<br>
+                if(x < 0 || y < 0) return 0;<br>
+                return max(poggies(mapa, x-1, y), poggies(mapa, x, y-1)) + mapa[x][y];
+            }<br>
+        </del>
+    </code>
+    <br> <strong>Programação Dinâmica</strong> <br>
+    <code>
+        int poggies(vector&lt;int>& mapa, <mark>vector&lt;int>& memo,</mark> int x, int y) {<br>
+            if(x < 0 || y < 0) return 0;<br>
+            <mark>if(memo[x][y] != -1) return memo[x][y];</mark><br>
+            return max(poggies(mapa, memo, x-1, y), poggies(mapa, memo, x, y-1)) + <mark>memo[x][y]</mark>;
+        }<br>
+        <br>
+    </code>
+    <br> <strong> Main </strong> <br>
+    <code>   
+        int main() {<br>
+            cin >> x >> y;<br>
+            vector&lt;int> mapa(x, vector&lt;int>(y))<br>
+            vector&lt;int> mapa(x, vector&lt;int>(y, -1))<br>
+            for(int i = 0; i < x; i++) {<br>
+                for(int j = 0; j < y; j++) {<br>
+                    int temp;<br>
+                    cin >> temp;<br>
+                    mapa[x][y] = temp;
+                }
+            }<br>
+            cout << poggies(mapa, memo, x-1, y-1);
+        }
+    </code>
+    <hr>
+    <i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum dolorum temporibus, accusamus dolorem mollitia ut assumenda? Velit impedit quia ipsam necessitatibus 
+        minima sit, fugit, doloribus, iusto laboriosam soluta nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae eius blanditiis ullam id excepturi 
+        iure deserunt impedit cupiditate nobis ex, eligendi dolores. Ipsam sed dolore placeat facilis esse quae!</i>
+    <hr>
+    <h1>Tags HTML</h1>
+    <em>Elemental Mastery</em>
+    <br>
+    <i>Conteúdo em Italiano</i>
+    <br>
+    <strong>Conteúdo Forte</strong>
+    <br>
+    <b>Conteúdo em Negresco</b>
+    <br>
+    <mark>Marca Texto</mark>
+    <br>
+    <s>Texto Cortado</s>
+    <br>
+    <del>Texto Deletado</del>
+    <br>
+    <ins>Texto Inserido</ins>
+</body>
+</html>
