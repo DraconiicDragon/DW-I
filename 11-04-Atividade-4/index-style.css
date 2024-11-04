@@ -1,0 +1,11 @@
+@import 'botoes.css';
+
+:root{
+    --verde-bonito: rgb(12, 170, 12);
+    --cor-texto-botao: white;
+    --cor-fundo-pagina: rgb(50, 50, 50);
+}
+
+body {
+    background-color: var(--cor-fundo-pagina);
+}

@@ -1,0 +1,14 @@
+.bt_geral {
+    color: var(--cor-texto-botao);
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.bt_salvar {
+    background-color: var(--verde-bonito);
+}
+
+.bt_cancelar {    
+    background-color: red;  
+}
