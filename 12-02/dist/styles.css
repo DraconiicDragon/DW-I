@@ -1,0 +1,22 @@
+#div-teste {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+#div-teste h1 {
+  color: red;
+}
+#div-teste h1:hover {
+  color: black;
+}
+#div-teste button {
+  color: blue;
+}
+#div-teste a:hover {
+  visibility: hidden;
+}
+#div2 {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}

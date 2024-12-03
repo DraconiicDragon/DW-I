@@ -1,0 +1,35 @@
+@teste: blue;
+#div-teste {
+    .borda-teste();
+
+    h1 {
+        color: red;
+    }
+    
+    h1:hover {
+        color: black;
+    }
+
+    button {
+        color: @teste;
+    }
+
+    a:hover {
+        visibility: hidden;
+    }
+
+}
+
+.borda-teste() {
+    border: 1px solid black;
+    #justificacao();
+}
+
+#justificacao() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#div2 {
+    .borda-teste();
+}
