@@ -1,0 +1,31 @@
+.cartasSelecionadas {
+    display: flex;
+    justify-content: center;
+}
+
+.cartasSelecionadas img {
+    flex-basis: 15%;
+}
+
+.mao {
+    display: flex;
+    justify-content: center;
+}
+
+.mao img {
+    width: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

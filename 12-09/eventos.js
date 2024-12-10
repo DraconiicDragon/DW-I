@@ -82,6 +82,7 @@ document.getElementById("bt_keepYS").addEventListener("click", KeepYS);
 document.getElementById("bt_krillYS").addEventListener("click", KrillYS);
 */
 
+/*
 import Trocador from "./eventosBotoes.js";
 
 window.addEventListener("load", () => {
@@ -90,3 +91,13 @@ window.addEventListener("load", () => {
 
 document.getElementById("bt_keepYS").addEventListener("click", Trocador.KeepYS);
 document.getElementById("bt_krillYS").addEventListener("click", Trocador.KrillYS);
+*/
+
+import troca from "./eventosBotoes.js";
+
+window.addEventListener("load", () => {
+    alert("Window Load")
+});
+
+document.getElementById("bt_keepYS").addEventListener("click", troca);
+document.getElementById("bt_krillYS").addEventListener("click", troca);

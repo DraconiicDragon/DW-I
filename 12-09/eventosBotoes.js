@@ -18,6 +18,8 @@ export function KrillYS() {
 };
 */
 
+
+/*
 const Trocador = {
     "KeepYS": () => {
         document.getElementById("imagem").src = "https://media.tenor.com/OoCablOllPsAAAAe/ltg-low-tier-god.png";
@@ -28,3 +30,15 @@ const Trocador = {
 };
 
 export default Trocador;
+*/
+
+const troca = (event) => {
+    const img = document.getElementById("imagem");
+    if(event.target.innetText == "Keep Yourself Safe") {
+        img.src = "https://media.tenor.com/OoCablOllPsAAAAe/ltg-low-tier-god.png";
+    } else if(event.target.innerText == "Krill Yourself") {
+        img.src = "https://steamuserimages-a.akamaihd.net/ugc/2009198719971119201/780370102320BF7C8FED0C14C17B4B446E49CAA1/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false";
+    }
+};
+
+export default troca;
