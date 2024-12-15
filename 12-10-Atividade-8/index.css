@@ -4,6 +4,8 @@
 }
 
 .cartasSelecionadas img {
+    width: 200px;
+    height: 400px;
     flex-basis: 15%;
 }
 
@@ -14,6 +16,7 @@
 
 .mao img {
     width: 200px;
+    flex-basis: 10%;
 }
 
 header {
@@ -23,6 +26,7 @@ header {
 
 header h1 {
     font-size: 100px;
+    margin: 10px;
 }
 
 footer {
